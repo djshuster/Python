@@ -17,8 +17,10 @@ Thus a few states did not receive complete information, namely the following:
 105– Kansas
 102– Illinois
 Source: https://simple.wikipedia.org/wiki/County_(United_States)
-
 [This program also covers data for the District of Columbia.]
+
+The approach is a fairly brute-force approach and would need to be altered for different screen sizes, etc.
+(This was done largely to experiment with pynput.)
 '''
 
 #TODO Remove unused modules
