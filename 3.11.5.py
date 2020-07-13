@@ -1,7 +1,8 @@
 # Last updated 13 July, 2020
 # Created by David Shuster
 
-# Potential additions: thicker for branches closer to the root, more creative leaves and colors
+# Potential additions: some sort of algorithm to calculate formulas for length to make the tree screen-fitting,
+# (and the possibility of changing the angle within the recursive call...)
 # Inspired by Problem 3.11.5 from Data Structures and Algorithms with Python by Kent Lee et al.
 import turtle
 
