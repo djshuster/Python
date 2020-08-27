@@ -46,9 +46,9 @@ def main():
 
     rootx = 0
     rooty = -100
-    angle = 30 #angle of the first non-trunk branch off of the vertical
-    lengthString = "20*numSB+10"
-    subBranches = 5 #number of sub-branches off of the tree
+    angle = 20 #angle of the first non-trunk branch off of the vertical
+    lengthString = "10*numSB+10"
+    subBranches = 7 #number of sub-branches off of the tree
 
     #set-up work
     t.pencolor("#A52A2A")
