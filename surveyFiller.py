@@ -1,4 +1,4 @@
-# Last updated 7 October, 2020
+# Last updated 18 October, 2020
 # Created by David Shuster
 
 # This program automatically fills out the Amherst College Health Status Update survey to get a GREEN result.
@@ -7,6 +7,7 @@
 # settings and have Chrome closed when the program starts running.
 
 from selenium import webdriver
+import time
 
 def main():
     # TODO: add your own path to your downloaded Chrome driver here.
@@ -23,6 +24,8 @@ def main():
     option.add_argument(userDataPath)
     browser = webdriver.Chrome(executable_path=chromePath, options=option)
     browser.get(websitePath)
+
+    time.sleep(0.5)
 
     #Are you staying in College-provided housing? *
     radiobuttons = browser.find_elements_by_class_name("docssharedWizToggleLabeledLabelWrapper")
@@ -75,6 +78,8 @@ def main():
     #Submit
     submitbuttons = browser.find_elements_by_class_name("appsMaterialWizButtonPaperbuttonContent")
     submitbuttons[1].click()
+    time.sleep(1)
+    browser.quit()
 
 if __name__ == "__main__":
     main()
